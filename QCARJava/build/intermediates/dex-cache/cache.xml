@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/build/intermediates/pre-dexed/debug/classes-cd6019d82229030849c379241c3aaa5c5dc3f377.jar" />
+    </item>
+    <item
+        jar="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/libs/VuforiaMedia.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="074ac1698c72222784421737283de1f5677ede69">
+        <dex dex="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/build/intermediates/pre-dexed/debug/VuforiaMedia-381cbeb224c92873a25de0f8371d78b5557100f7.jar" />
+    </item>
+    <item
+        jar="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/libs/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8c2c1d52d383df889be8d58e0c4973ce0abaf011">
+        <dex dex="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/build/intermediates/pre-dexed/debug/classes-850d663fcb4dedf325c26dd0a2b397b4ae779949.jar" />
+    </item>
+    <item
+        jar="/Users/sxa1056/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-9b09d6f832bca2436a8ddd2e5be602a3fab09922.jar" />
+    </item>
+    <item
+        jar="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-4e6982bdbee30c9263ea581c94f9a31ff7f682ff.jar" />
+    </item>
+    <item
+        jar="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/libs/QCARUnityPlayer.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fc82380e787fc40cc13f3a471bc0d30cc568d812">
+        <dex dex="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/build/intermediates/pre-dexed/debug/QCARUnityPlayer-58ac9be40714540e241a36264f1771ebeefdfbee.jar" />
+    </item>
+    <item
+        jar="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/build/intermediates/pre-dexed/debug/classes-9cb769cca831cfd2a0ba0f0ca05e97c9f3bcc6f9.jar" />
+    </item>
+    <item
+        jar="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/libs/Vuforia.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c0b912ee883b3f96c6170cafb3fe58c682d95629">
+        <dex dex="/Users/sxa1056/Desktop/DevWorkspace/QCARJava/app/build/intermediates/pre-dexed/debug/Vuforia-9b3b49a5f99653a0675ee281fe496affc2bfee73.jar" />
+    </item>
+
+</items>
