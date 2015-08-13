@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\VirtualButtonEventHandler.cs">
+    <Files>
+      <File FileName="Assets\Vuforia Video Playback\Scripts\VideoPlaybackBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\VirtualButtonsUIEventHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\VirtualButtonEventHandler.cs" Line="102" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

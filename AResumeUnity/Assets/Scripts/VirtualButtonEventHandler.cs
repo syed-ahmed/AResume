@@ -65,35 +65,50 @@ IVirtualButtonEventHandler
 		{
 			return;
 		}
-		
-		// Add the material corresponding to this virtual button
-		// to the active material list:
-		switch (vb.VirtualButtonName)
-		{
-		case "button1":
-			mActiveLinks.Add(m_ProjectLinks[0]);
-			break;
-			
-		case "button2":
-			mActiveLinks.Add(m_ProjectLinks[1]);
-			break;
-			
-		case "button3":
-			mActiveLinks.Add(m_ProjectLinks[2]);
-			break;
+
+		if (vb.VirtualButtonName == "button1") {
+			string url = m_ProjectLinks[0];
+			AndroidJavaClass jc = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+			AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject> ("currentActivity");
+			jo.Call ("openWebsite", url);
 		}
-		
-		// Apply the new material:
-		if (mActiveLinks.Count > 0) {
-			Application.OpenURL (mActiveLinks [mActiveLinks.Count - 1]);
+
+		if (vb.VirtualButtonName == "button2") {
+			string url = m_ProjectLinks[1];
+			AndroidJavaClass jc = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+			AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject> ("currentActivity");
+			jo.Call ("openWebsite", url);
+		}
+
+		if (vb.VirtualButtonName == "button3") {
+			string url = m_ProjectLinks[2];
+			AndroidJavaClass jc = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+			AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject> ("currentActivity");
+			jo.Call ("openWebsite", url);
 		}
 
 		if (vb.VirtualButtonName == "button4") {
+			string address = m_ProjectLinks[3];
 			AndroidJavaClass jc = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
 			AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject> ("currentActivity");
-			// Invoke the "showMessage" method in our Android Plugin Activity
-			jo.Call ("callPhone");
+			jo.Call ("sendEmail", address);
 		}
+
+		if (vb.VirtualButtonName == "button5") {
+			string number = m_ProjectLinks[4];
+			AndroidJavaClass jc = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+			AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject> ("currentActivity");
+			jo.Call ("callPhone", number);
+		}
+
+		if (vb.VirtualButtonName == "button6") {
+			string number = m_ProjectLinks[5];
+			AndroidJavaClass jc = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+			AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject> ("currentActivity");
+			jo.Call ("openProjects");
+		}
+
+
 	}
 				
 		/// <summary>
@@ -105,43 +120,13 @@ IVirtualButtonEventHandler
 		{
 			return;
 		}
-		
-		// Remove the material corresponding to this virtual button
-		// from the active material list:
-		switch (vb.VirtualButtonName)
-		{
-		case "button1":
-			mActiveLinks.Remove(m_ProjectLinks[0]);
-			break;
-			
-		case "button2":
-			mActiveLinks.Remove(m_ProjectLinks[1]);
-			break;
-			
-		case "button3":
-			mActiveLinks.Remove(m_ProjectLinks[2]);
-			break;
-		}
-		
-		// Apply the next active material, or apply the default material:
-		// Apply the new material:
-		if (mActiveLinks.Count > 0) {
-			Application.OpenURL (mActiveLinks [mActiveLinks.Count - 1]);
-		}
-		
-		if (vb.VirtualButtonName == "button4") {
-			AndroidJavaClass jc = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
-			AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject> ("currentActivity");
-			// Invoke the "showMessage" method in our Android Plugin Activity
-			jo.Call ("callPhone");
-		}
 	}
 			
 			
 	private bool IsValid()
 	{
 		// Check the materials and teapot have been set:
-		return  m_ProjectLinks != null && m_ProjectLinks.Length == 4;
+		return  m_ProjectLinks != null;
 	}
 	
 	#endregion // PUBLIC_METHODS

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="Syed-Resume" size="2550.000000 3300.000000" />
-    <ImageTarget name="Syed-Resume-Alt" size="1013.000000 1120.000000" />
+    <ImageTarget name="Syed-Resume-Alt" size="1014.000000 1120.000000" />
   </Tracking>
 </QCARConfig>

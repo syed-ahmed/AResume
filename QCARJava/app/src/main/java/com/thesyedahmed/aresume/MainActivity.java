@@ -1,5 +1,6 @@
 package com.thesyedahmed.aresume;
 
+import android.app.ActivityManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -61,14 +62,45 @@ public class MainActivity extends UnityPlayerNativeActivity {
         }
     }
 
-    public void callPhone(){
+    public void callPhone(final String number){
         this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                String number = "5852868218";
                 Uri call = Uri.parse("tel:" + number);
-                Intent surf = new Intent(Intent.ACTION_DIAL, call);
-                startActivity(surf);
+                Intent dialIntent = new Intent(Intent.ACTION_DIAL, call);
+                startActivity(dialIntent);
+            }
+        });
+    }
+
+    public void openWebsite(final String url){
+        this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Intent browsingIntent = new Intent(Intent.ACTION_VIEW);
+                browsingIntent.setData(Uri.parse(url));
+                startActivity(browsingIntent);
+            }
+        });
+
+    }
+
+    public void sendEmail(final String address){
+        this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                        "mailto",address, null));
+                startActivity(Intent.createChooser(emailIntent, "Send email..."));
+            }
+        });
+    }
+
+    public void openProjects(){
+        this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+
             }
         });
     }
