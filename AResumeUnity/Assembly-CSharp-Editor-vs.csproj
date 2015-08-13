@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{5C73AEE6-0337-E962-AB0E-54ED5E8AD533}</ProjectGuid>
+	<ProjectGuid>{D80D2D2F-F410-1300-0DA0-0E4D5FFA3E28}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -73,7 +73,7 @@
      <None Include="Assets\StreamingAssets\QCAR\AResume.xml" />
      <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
  <Reference Include="Assembly-UnityScript-Editor-firstpass">
- <HintPath>C:/Users/steakpizza/Desktop/DevWorkspace/AResume/Library/ScriptAssemblies/Assembly-UnityScript-Editor-firstpass.dll</HintPath>
+ <HintPath>C:/Users/steakpizza/Desktop/DevWorkspace/AResume/AResume/AResumeUnity/Library/ScriptAssemblies/Assembly-UnityScript-Editor-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.7/Standalone/UnityEngine.UI.dll</HintPath>
@@ -82,10 +82,10 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.7/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Qualcomm.Vuforia.UnityExtensions.Editor">
- <HintPath>C:/Users/steakpizza/Desktop/DevWorkspace/AResume/Assets/Vuforia/Editor/Scripts/Qualcomm.Vuforia.UnityExtensions.Editor.dll</HintPath>
+ <HintPath>C:/Users/steakpizza/Desktop/DevWorkspace/AResume/AResume/AResumeUnity/Assets/Vuforia/Editor/Scripts/Qualcomm.Vuforia.UnityExtensions.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Qualcomm.Vuforia.UnityExtensions">
- <HintPath>C:/Users/steakpizza/Desktop/DevWorkspace/AResume/Assets/Vuforia/Scripts/Internal/Qualcomm.Vuforia.UnityExtensions.dll</HintPath>
+ <HintPath>C:/Users/steakpizza/Desktop/DevWorkspace/AResume/AResume/AResumeUnity/Assets/Vuforia/Scripts/Internal/Qualcomm.Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -93,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{538163E4-BB08-3F09-14C9-926DFCFEA515}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+      <Project>{7BBAE2B9-D7DA-28BE-D834-A8B38B60B234}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

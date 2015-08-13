@@ -1,5 +1,7 @@
 package com.thesyedahmed.aresume;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -57,5 +59,17 @@ public class MainActivity extends UnityPlayerNativeActivity {
             DebugLog.LOGE("Found leaf view");
             return view;
         }
+    }
+
+    public void callPhone(){
+        this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                String number = "5852868218";
+                Uri call = Uri.parse("tel:" + number);
+                Intent surf = new Intent(Intent.ACTION_DIAL, call);
+                startActivity(surf);
+            }
+        });
     }
 }

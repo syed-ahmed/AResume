@@ -81,62 +81,68 @@ IVirtualButtonEventHandler
 		case "button3":
 			mActiveLinks.Add(m_ProjectLinks[2]);
 			break;
-			
-		case "button4":
-			mActiveLinks.Add(m_ProjectLinks[3]);
-			break;
 		}
 		
 		// Apply the new material:
-		if (mActiveLinks.Count > 0)
+		if (mActiveLinks.Count > 0) {
 			Application.OpenURL (mActiveLinks [mActiveLinks.Count - 1]);
+		}
+
+		if (vb.VirtualButtonName == "button4") {
+			AndroidJavaClass jc = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+			AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject> ("currentActivity");
+			// Invoke the "showMessage" method in our Android Plugin Activity
+			jo.Call ("callPhone");
+		}
+	}
 				
-				}
-				
-				
-				/// <summary>
-				/// Called when the virtual button has just been released:
-				/// </summary>
-				public void OnButtonReleased(VirtualButtonAbstractBehaviour vb)
-				{
-				if (!IsValid())
-				{
-					return;
-				}
-				
-				// Remove the material corresponding to this virtual button
-				// from the active material list:
-				switch (vb.VirtualButtonName)
-				{
-				case "button1":
-					mActiveLinks.Remove(m_ProjectLinks[0]);
-					break;
-					
-				case "button2":
-					mActiveLinks.Remove(m_ProjectLinks[1]);
-					break;
-					
-				case "button3":
-					mActiveLinks.Remove(m_ProjectLinks[2]);
-					break;
-					
-				case "button4":
-					mActiveLinks.Remove(m_ProjectLinks[3]);
-					break;
-				}
-				
-				// Apply the next active material, or apply the default material:
-				// Apply the new material:
-				if (mActiveLinks.Count > 0) 
-					Application.OpenURL (mActiveLinks [mActiveLinks.Count - 1]);
-			}
+		/// <summary>
+		/// Called when the virtual button has just been released:
+		/// </summary>
+	public void OnButtonReleased(VirtualButtonAbstractBehaviour vb)
+		{
+		if (!IsValid())
+		{
+			return;
+		}
+		
+		// Remove the material corresponding to this virtual button
+		// from the active material list:
+		switch (vb.VirtualButtonName)
+		{
+		case "button1":
+			mActiveLinks.Remove(m_ProjectLinks[0]);
+			break;
+			
+		case "button2":
+			mActiveLinks.Remove(m_ProjectLinks[1]);
+			break;
+			
+		case "button3":
+			mActiveLinks.Remove(m_ProjectLinks[2]);
+			break;
+		}
+		
+		// Apply the next active material, or apply the default material:
+		// Apply the new material:
+		if (mActiveLinks.Count > 0) {
+			Application.OpenURL (mActiveLinks [mActiveLinks.Count - 1]);
+		}
+		
+		if (vb.VirtualButtonName == "button4") {
+			AndroidJavaClass jc = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+			AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject> ("currentActivity");
+			// Invoke the "showMessage" method in our Android Plugin Activity
+			jo.Call ("callPhone");
+		}
+	}
 			
 			
-			private bool IsValid()
-			{
-				// Check the materials and teapot have been set:
-				return  m_ProjectLinks != null && m_ProjectLinks.Length == 4;
-			}
-			
-			#endregion // PUBLIC_METHODS
-			}
+	private bool IsValid()
+	{
+		// Check the materials and teapot have been set:
+		return  m_ProjectLinks != null && m_ProjectLinks.Length == 4;
+	}
+	
+	#endregion // PUBLIC_METHODS
+}
