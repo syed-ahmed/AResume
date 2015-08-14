@@ -347,7 +347,7 @@ int id action_menu_presenter 0x7f0b0003
 int id action_mode_bar 0x7f0b002e
 int id action_mode_bar_stub 0x7f0b002d
 int id action_mode_close_button 0x7f0b0020
-int id action_settings 0x7f0b003f
+int id action_settings 0x7f0b0040
 int id activity_chooser_view_content 0x7f0b0021
 int id always 0x7f0b0016
 int id beginning 0x7f0b0013
@@ -362,6 +362,7 @@ int id edit_query 0x7f0b0033
 int id end 0x7f0b0014
 int id expand_activities_button 0x7f0b0022
 int id expanded_menu 0x7f0b0028
+int id fragment_web_page_web_view 0x7f0b003f
 int id home 0x7f0b0004
 int id homeAsUp 0x7f0b000d
 int id icon 0x7f0b0026
@@ -423,7 +424,8 @@ int layout abc_search_dropdown_item_icons_2line 0x7f030014
 int layout abc_search_view 0x7f030015
 int layout abc_simple_dropdown_hint 0x7f030016
 int layout activity_main 0x7f030017
-int layout support_simple_spinner_dropdown_item 0x7f030018
+int layout fragment_web_page 0x7f030018
+int layout support_simple_spinner_dropdown_item 0x7f030019
 int menu main 0x7f0c0000
 int string abc_action_bar_home_description 0x7f050000
 int string abc_action_bar_home_description_format 0x7f050001
