@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.thesyedahmed.aresume"
     android:installLocation="preferExternal"
-    android:theme="@android:style/Theme.NoTitleBar"
+    android:theme="@style/AppTheme"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -46,7 +46,7 @@
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        android:theme="@style/AppTheme" >
         <activity
             android:name="com.thesyedahmed.aresume.MainActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
@@ -72,6 +72,7 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
+        <activity android:name="com.thesyedahmed.aresume.WebPageActivity" />
         <!--
             To support devices using the TI S3D library for stereo mode we must 
             add the following library.

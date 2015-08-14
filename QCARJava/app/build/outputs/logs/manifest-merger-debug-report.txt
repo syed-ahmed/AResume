@@ -6,15 +6,15 @@ ADDED from AndroidManifest.xml:2:1
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
 	android:versionName
-		ADDED from AndroidManifest.xml:2:153
+		ADDED from AndroidManifest.xml:2:137
 	android:versionCode
-		ADDED from AndroidManifest.xml:2:179
+		ADDED from AndroidManifest.xml:2:163
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
 	xmlns:android
 		ADDED from AndroidManifest.xml:2:11
 	android:installLocation
-		ADDED from AndroidManifest.xml:2:203
+		ADDED from AndroidManifest.xml:2:187
 	android:theme
 		ADDED from AndroidManifest.xml:2:105
 uses-feature#android.hardware.camera
@@ -51,9 +51,9 @@ ADDED from AndroidManifest.xml:8:3
 		ADDED from AndroidManifest.xml:8:20
 application
 ADDED from AndroidManifest.xml:9:3
-MERGED from com.android.support:support-v4:21.0.3:16:5
-MERGED from com.android.support:appcompat-v7:21.0.3:16:5
-MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.android.support:support-v4:22.2.0:22:5
+MERGED from com.android.support:appcompat-v7:22.2.0:22:5
+MERGED from com.android.support:support-v4:22.2.0:22:5
 	android:label
 		ADDED from AndroidManifest.xml:9:53
 	android:icon
@@ -104,66 +104,70 @@ ADDED from AndroidManifest.xml:18:5
 		ADDED from AndroidManifest.xml:18:131
 	android:name
 		ADDED from AndroidManifest.xml:18:15
+activity#com.thesyedahmed.aresume.WebPageActivity
+ADDED from AndroidManifest.xml:20:5
+	android:name
+		ADDED from AndroidManifest.xml:20:15
 uses-library#com.ti.s3d
-ADDED from AndroidManifest.xml:25:5
+ADDED from AndroidManifest.xml:26:5
 	android:required
-		ADDED from AndroidManifest.xml:25:45
+		ADDED from AndroidManifest.xml:26:45
 	android:name
-		ADDED from AndroidManifest.xml:25:19
+		ADDED from AndroidManifest.xml:26:19
 uses-library#com.osterhoutgroup.api.ext
-ADDED from AndroidManifest.xml:29:5
+ADDED from AndroidManifest.xml:30:5
 	android:required
-		ADDED from AndroidManifest.xml:29:61
+		ADDED from AndroidManifest.xml:30:61
 	android:name
-		ADDED from AndroidManifest.xml:29:19
+		ADDED from AndroidManifest.xml:30:19
 uses-sdk
-ADDED from AndroidManifest.xml:31:3
-MERGED from com.android.support:support-v4:21.0.3:15:5
-MERGED from com.android.support:appcompat-v7:21.0.3:15:5
-MERGED from com.android.support:support-v4:21.0.3:15:5
+ADDED from AndroidManifest.xml:32:3
+MERGED from com.android.support:support-v4:22.2.0:20:5
+MERGED from com.android.support:appcompat-v7:22.2.0:20:5
+MERGED from com.android.support:support-v4:22.2.0:20:5
 	android:targetSdkVersion
-		ADDED from AndroidManifest.xml:31:39
+		ADDED from AndroidManifest.xml:32:39
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
 	android:minSdkVersion
-		ADDED from AndroidManifest.xml:31:13
+		ADDED from AndroidManifest.xml:32:13
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
 uses-feature#0x00020000
-ADDED from AndroidManifest.xml:32:3
-	android:glEsVersion
-		ADDED from AndroidManifest.xml:32:17
-uses-feature#android.hardware.camera.autofocus
 ADDED from AndroidManifest.xml:33:3
-	android:required
-		ADDED from AndroidManifest.xml:33:66
-	android:name
+	android:glEsVersion
 		ADDED from AndroidManifest.xml:33:17
-uses-feature#android.hardware.camera.front
+uses-feature#android.hardware.camera.autofocus
 ADDED from AndroidManifest.xml:34:3
 	android:required
-		ADDED from AndroidManifest.xml:34:62
+		ADDED from AndroidManifest.xml:34:66
 	android:name
 		ADDED from AndroidManifest.xml:34:17
-uses-feature#android.hardware.touchscreen
+uses-feature#android.hardware.camera.front
 ADDED from AndroidManifest.xml:35:3
 	android:required
-		ADDED from AndroidManifest.xml:35:61
+		ADDED from AndroidManifest.xml:35:62
 	android:name
 		ADDED from AndroidManifest.xml:35:17
-uses-feature#android.hardware.touchscreen.multitouch
+uses-feature#android.hardware.touchscreen
 ADDED from AndroidManifest.xml:36:3
 	android:required
-		ADDED from AndroidManifest.xml:36:72
+		ADDED from AndroidManifest.xml:36:61
 	android:name
 		ADDED from AndroidManifest.xml:36:17
-uses-feature#android.hardware.touchscreen.multitouch.distinct
+uses-feature#android.hardware.touchscreen.multitouch
 ADDED from AndroidManifest.xml:37:3
 	android:required
-		ADDED from AndroidManifest.xml:37:81
+		ADDED from AndroidManifest.xml:37:72
 	android:name
 		ADDED from AndroidManifest.xml:37:17
-uses-permission#android.permission.WAKE_LOCK
+uses-feature#android.hardware.touchscreen.multitouch.distinct
 ADDED from AndroidManifest.xml:38:3
+	android:required
+		ADDED from AndroidManifest.xml:38:81
 	android:name
-		ADDED from AndroidManifest.xml:38:20
+		ADDED from AndroidManifest.xml:38:17
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:39:3
+	android:name
+		ADDED from AndroidManifest.xml:39:20

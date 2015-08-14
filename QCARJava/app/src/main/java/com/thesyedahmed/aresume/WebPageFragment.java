@@ -1,12 +1,14 @@
 package com.thesyedahmed.aresume;
 
-import android.app.Fragment;
+
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 /**
  * Created by steakpizza on 8/13/2015.
@@ -36,6 +38,13 @@ public class WebPageFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_web_page, container, false);
         mWebView = (WebView) v.findViewById(R.id.fragment_web_page_web_view);
+        mWebView.getSettings().setJavaScriptEnabled(true);
+        mWebView.setWebViewClient(new WebViewClient(){
+            public boolean shouldOverrideUrlLoading(WebView view, String url){
+                return false;
+            }
+        });
+        mWebView.loadUrl(mUri.toString());
         return v;
     }
 }

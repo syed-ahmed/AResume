@@ -6,12 +6,15 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.support.v4.app.Fragment;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.view.ViewGroup.LayoutParams;
 
 import com.qualcomm.QCARUnityPlayer.DebugLog;
 import com.unity3d.player.UnityPlayerNativeActivity;
+
+import java.net.URI;
 
 
 public class MainActivity extends UnityPlayerNativeActivity {
@@ -77,9 +80,9 @@ public class MainActivity extends UnityPlayerNativeActivity {
         this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Intent browsingIntent = new Intent(Intent.ACTION_VIEW);
-                browsingIntent.setData(Uri.parse(url));
-                startActivity(browsingIntent);
+                Intent i = WebPageActivity
+                        .newIntent(MainActivity.this, Uri.parse(url));
+                startActivity(i);
             }
         });
 

@@ -19,8 +19,9 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:21.0.3'
-    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:support-v4:22.2.0'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile "com.android.support:support-annotations:22.2.0"
     compile files('libs/QCARUnityPlayer.jar')
     compile files('libs/Vuforia.jar')
     compile files('libs/VuforiaMedia.jar')
