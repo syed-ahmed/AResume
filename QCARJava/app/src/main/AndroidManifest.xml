@@ -60,7 +60,8 @@
         </activity>
         <activity
             android:name=".WebPageActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"/>
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
   </application>
 </manifest>
 <!-- android:installLocation="preferExternal" -->

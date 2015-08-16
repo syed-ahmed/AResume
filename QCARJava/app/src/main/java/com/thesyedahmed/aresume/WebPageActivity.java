@@ -19,6 +19,7 @@ public class WebPageActivity extends SingleFragmentActivity {
         Intent i = new Intent(context, WebPageActivity.class);
         i.setData(webPageUri);
         return i;
+
     }
 
     @Override

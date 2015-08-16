@@ -1,6 +1,9 @@
 package com.thesyedahmed.aresume;
 
 
+import android.app.Activity;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebBackForwardList;
 import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
@@ -46,6 +50,7 @@ public class WebPageFragment extends Fragment {
         mProgressBar.setMax(100);
         mWebView = (WebView) v.findViewById(R.id.fragment_web_page_web_view);
         mWebView.getSettings().setJavaScriptEnabled(true);
+        mWebView.getSettings().setSupportZoom(true);
         mWebView.setWebChromeClient(new WebChromeClient() {
             public void onProgressChanged(WebView webView, int newProgress) {
                 if (newProgress == 100) {
@@ -63,10 +68,23 @@ public class WebPageFragment extends Fragment {
             }
         });
         mWebView.setWebViewClient(new WebViewClient() {
+            @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                if (!(Uri.parse(url).getScheme().equals("http") || Uri.parse(url).getScheme().equals("https"))) {
+                    try {
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        startActivity(i);
+                        return true;
+                    } catch (ActivityNotFoundException e) {
+                        return false;
+                    }
+
+                }
                 return false;
             }
         });
+
         mWebView.loadUrl(mUri.toString());
         return v;
     }
