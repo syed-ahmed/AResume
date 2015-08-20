@@ -87,80 +87,31 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * final long delay = 5000;//ms
-
-     Handler handler = new Handler();
-     Runnable runnable = new Runnable() {
-     public void run() {
-     ViewGroup rootView = (ViewGroup) MainActivity.this.findViewById
-     (android.R.id.content);
-
-     // find the first leaf view (i.e. a view without children)
-     // the leaf view represents the topmost view in the view stack
-     View topMostView = getLeafView(rootView);
-
-     // let's add a sibling to the leaf view
-     ViewGroup leafParent = (ViewGroup) topMostView.getParent();
-     Button sampleButton = new Button(MainActivity.this);
-     sampleButton.setText("Press Me");
-     leafParent.addView(sampleButton, new LayoutParams(LayoutParams.WRAP_CONTENT,
-     LayoutParams.WRAP_CONTENT));
-
-     }
-     };
-
-     handler.postDelayed(runnable, delay);
-
-     }
-
-     private View getLeafView(View view) {
-     if (view instanceof ViewGroup) {
-     ViewGroup vg = (ViewGroup) view;
-     for (int i = 0; i < vg.getChildCount(); ++i) {
-     View chview = vg.getChildAt(i);
-     View result = getLeafView(chview);
-     if (result != null)
-     return result;
-     }
-     return null;
-     } else {
-     DebugLog.LOGE("Found leaf view");
-     return view;
-     }
-     }
-     */
-    // Quit Unity
-    @Override protected void onDestroy ()
-    {
+    @Override protected void onDestroy (){
         mUnityPlayer.quit();
         super.onDestroy();
     }
 
     // Pause Unity
-    @Override protected void onPause()
-    {
+    @Override protected void onPause(){
         super.onPause();
         mUnityPlayer.pause();
     }
 
     // Resume Unity
-    @Override protected void onResume()
-    {
+    @Override protected void onResume(){
         super.onResume();
         mUnityPlayer.resume();
     }
 
     // This ensures the layout will be correct.
-    @Override public void onConfigurationChanged(Configuration newConfig)
-    {
+    @Override public void onConfigurationChanged(Configuration newConfig){
         super.onConfigurationChanged(newConfig);
         mUnityPlayer.configurationChanged(newConfig);
     }
 
     // Notify Unity of the focus change.
-    @Override public void onWindowFocusChanged(boolean hasFocus)
-    {
+    @Override public void onWindowFocusChanged(boolean hasFocus){
         super.onWindowFocusChanged(hasFocus);
         mUnityPlayer.windowFocusChanged(hasFocus);
     }
@@ -175,9 +126,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Pass any events not handled by (unfocused) views straight to UnityPlayer
-    @Override public boolean onKeyUp(int keyCode, KeyEvent event)     { return mUnityPlayer.injectEvent(event); }
-    @Override public boolean onKeyDown(int keyCode, KeyEvent event)   { return mUnityPlayer.injectEvent(event); }
-    @Override public boolean onTouchEvent(MotionEvent event)          { return mUnityPlayer.injectEvent(event); }
-    /*API12*/ public boolean onGenericMotionEvent(MotionEvent event)  { return mUnityPlayer.injectEvent(event); }
+    @Override public boolean onKeyUp(int keyCode, KeyEvent event){
+        return mUnityPlayer.injectEvent(event);
+    }
+
+    @Override public boolean onKeyDown(int keyCode, KeyEvent event){
+        return mUnityPlayer.injectEvent(event);
+    }
+
+    @Override public boolean onTouchEvent(MotionEvent event) {
+        return mUnityPlayer.injectEvent(event);
+    }
+
+    public boolean onGenericMotionEvent(MotionEvent event){
+        return mUnityPlayer.injectEvent(event);
+    }
 
 }

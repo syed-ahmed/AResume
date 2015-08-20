@@ -199,7 +199,7 @@
     <!-- From: file:/C:/Users/steakpizza/Desktop/DevWorkspace/AResume/AResume/QCARJava/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
-    <string name="app_name">QCARJava</string>
+    <string name="app_name">AResume</string>
     <string name="hello_world">Hello world!</string>
     <!-- From: file:/C:/Users/steakpizza/Desktop/DevWorkspace/AResume/AResume/QCARJava/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
