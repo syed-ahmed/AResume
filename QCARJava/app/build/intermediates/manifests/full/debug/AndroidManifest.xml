@@ -80,6 +80,10 @@
                 android:value="true" />
         </activity>
         <activity
+            android:name="com.thesyedahmed.aresume.AppIntroduction"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
             android:name="com.thesyedahmed.aresume.WebPageActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" >
         </activity>

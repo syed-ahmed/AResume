@@ -2,6 +2,7 @@ package com.thesyedahmed.aresume;
 
 import android.app.ActivityManager;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.PixelFormat;
 import android.net.Uri;
@@ -27,11 +28,15 @@ import java.net.URI;
 
 public class MainActivity extends AppCompatActivity {
     protected UnityPlayer mUnityPlayer;
+    SharedPreferences prefs = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Intent intent = new Intent(this, AppIntroduction.class);
+        startActivity(intent);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
+        
         getWindow().takeSurface(null);
         getWindow().setFormat(PixelFormat.RGBX_8888); // <--- This makes xperia play happy
 

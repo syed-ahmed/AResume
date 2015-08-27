@@ -59,6 +59,10 @@
               android:value="true" />
         </activity>
         <activity
+            android:name=".AppIntroduction"
+            android:theme="@style/FullscreenTheme">
+        </activity>
+        <activity
             android:name=".WebPageActivity"
             android:configChanges="keyboardHidden|orientation|screenSize">
         </activity>
