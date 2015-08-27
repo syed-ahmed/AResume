@@ -1,6 +1,7 @@
 package com.thesyedahmed.aresume;
 
 import android.app.ActivityManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -28,25 +29,54 @@ import java.net.URI;
 
 public class MainActivity extends AppCompatActivity {
     protected UnityPlayer mUnityPlayer;
-    SharedPreferences prefs = null;
+    SharedPreferences mPrefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Intent intent = new Intent(this, AppIntroduction.class);
-        startActivity(intent);
+
+
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
-        
-        getWindow().takeSurface(null);
-        getWindow().setFormat(PixelFormat.RGBX_8888); // <--- This makes xperia play happy
+        Context mContext = this.getApplicationContext();
+        mPrefs = mContext.getSharedPreferences("myAppPrefs", 0);
 
-        mUnityPlayer = new UnityPlayer(this);
-        if (mUnityPlayer.getSettings ().getBoolean ("hide_status_bar", true))
-            getWindow ().setFlags (WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        if(getFirstRun()){
+            setRunned();
+            Intent intent = new Intent(this, AppIntroduction.class);
+            startActivity(intent);
+            getWindow().takeSurface(null);
+            getWindow().setFormat(PixelFormat.RGBX_8888); // <--- This makes xperia play happy
 
-        setContentView(mUnityPlayer);
-        mUnityPlayer.requestFocus();
+            mUnityPlayer = new UnityPlayer(this);
+            if (mUnityPlayer.getSettings ().getBoolean ("hide_status_bar", true))
+                getWindow ().setFlags (WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                        WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+            setContentView(mUnityPlayer);
+            mUnityPlayer.requestFocus();
+        }
+        else{
+            getWindow().takeSurface(null);
+            getWindow().setFormat(PixelFormat.RGBX_8888); // <--- This makes xperia play happy
+
+            mUnityPlayer = new UnityPlayer(this);
+            if (mUnityPlayer.getSettings ().getBoolean ("hide_status_bar", true))
+                getWindow ().setFlags (WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                        WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+            setContentView(mUnityPlayer);
+            mUnityPlayer.requestFocus();
+        }
+    }
+
+    public boolean getFirstRun() {
+        return mPrefs.getBoolean("firstRun", true);
+    }
+
+    public void setRunned() {
+        SharedPreferences.Editor edit = mPrefs.edit();
+        edit.putBoolean("firstRun", false);
+        edit.commit();
     }
 
     public void callPhone(final String number){
@@ -107,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
     @Override protected void onResume(){
         super.onResume();
         mUnityPlayer.resume();
+
     }
 
     // This ensures the layout will be correct.
