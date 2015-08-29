@@ -9,6 +9,7 @@ import android.graphics.PixelFormat;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.PowerManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -24,6 +25,7 @@ import com.qualcomm.QCARUnityPlayer.DebugLog;
 import com.unity3d.player.UnityPlayer;
 import com.unity3d.player.UnityPlayerNativeActivity;
 
+import java.lang.reflect.Method;
 import java.net.URI;
 
 
@@ -39,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Context mContext = this.getApplicationContext();
         mPrefs = mContext.getSharedPreferences("myAppPrefs", 0);
-
         if(getFirstRun()){
             setRunned();
             Intent intent = new Intent(this, AppIntroduction.class);
@@ -48,12 +49,15 @@ public class MainActivity extends AppCompatActivity {
             getWindow().setFormat(PixelFormat.RGBX_8888); // <--- This makes xperia play happy
 
             mUnityPlayer = new UnityPlayer(this);
-            if (mUnityPlayer.getSettings ().getBoolean ("hide_status_bar", true))
+            if (mUnityPlayer.getSettings ().getBoolean ("hide_status_bar", true)){
                 getWindow ().setFlags (WindowManager.LayoutParams.FLAG_FULLSCREEN,
                         WindowManager.LayoutParams.FLAG_FULLSCREEN);
+            }
+
 
             setContentView(mUnityPlayer);
             mUnityPlayer.requestFocus();
+
         }
         else{
             getWindow().takeSurface(null);
@@ -107,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                        "mailto",address, null));
+                        "mailto", address, null));
                 startActivity(Intent.createChooser(emailIntent, "Send email..."));
             }
         });
@@ -125,12 +129,16 @@ public class MainActivity extends AppCompatActivity {
     @Override protected void onDestroy (){
         mUnityPlayer.quit();
         super.onDestroy();
+
     }
 
     // Pause Unity
     @Override protected void onPause(){
         super.onPause();
         mUnityPlayer.pause();
+
+
+
     }
 
     // Resume Unity
@@ -151,31 +159,4 @@ public class MainActivity extends AppCompatActivity {
         super.onWindowFocusChanged(hasFocus);
         mUnityPlayer.windowFocusChanged(hasFocus);
     }
-
-    // For some reason the multiple keyevent type is not supported by the ndk.
-    // Force event injection by overriding dispatchKeyEvent().
-    @Override public boolean dispatchKeyEvent(KeyEvent event)
-    {
-        if (event.getAction() == KeyEvent.ACTION_MULTIPLE)
-            return mUnityPlayer.injectEvent(event);
-        return super.dispatchKeyEvent(event);
-    }
-
-    // Pass any events not handled by (unfocused) views straight to UnityPlayer
-    @Override public boolean onKeyUp(int keyCode, KeyEvent event){
-        return mUnityPlayer.injectEvent(event);
-    }
-
-    @Override public boolean onKeyDown(int keyCode, KeyEvent event){
-        return mUnityPlayer.injectEvent(event);
-    }
-
-    @Override public boolean onTouchEvent(MotionEvent event) {
-        return mUnityPlayer.injectEvent(event);
-    }
-
-    public boolean onGenericMotionEvent(MotionEvent event){
-        return mUnityPlayer.injectEvent(event);
-    }
-
 }

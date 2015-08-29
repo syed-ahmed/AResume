@@ -26,5 +26,5 @@ dependencies {
     compile files('libs/QCARUnityPlayer.jar')
     compile files('libs/Vuforia.jar')
     compile files('libs/VuforiaMedia.jar')
-    compile files('libs/classes.jar')
+    compile files('libs/unity-classes.jar')
 }
