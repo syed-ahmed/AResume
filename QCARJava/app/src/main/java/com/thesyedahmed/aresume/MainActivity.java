@@ -1,6 +1,5 @@
 package com.thesyedahmed.aresume;
 
-import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,25 +7,14 @@ import android.content.res.Configuration;
 import android.graphics.PixelFormat;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.PowerManager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
-import android.view.View;
-import android.support.v4.app.Fragment;
-import android.view.ViewGroup;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
-import android.view.ViewGroup.LayoutParams;
 
-import com.qualcomm.QCARUnityPlayer.DebugLog;
 import com.unity3d.player.UnityPlayer;
-import com.unity3d.player.UnityPlayerNativeActivity;
-
-import java.lang.reflect.Method;
-import java.net.URI;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -43,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         mPrefs = mContext.getSharedPreferences("myAppPrefs", 0);
         if(getFirstRun()){
             setRunned();
-            Intent intent = new Intent(this, AppIntroduction.class);
+            Intent intent = new Intent(this, AppIntroductionActivity.class);
             startActivity(intent);
             getWindow().takeSurface(null);
             getWindow().setFormat(PixelFormat.RGBX_8888); // <--- This makes xperia play happy
@@ -121,6 +109,8 @@ public class MainActivity extends AppCompatActivity {
         this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
+                Intent projects = new Intent(MainActivity.this, ProjectsActivity.class);
+                startActivity(projects);
 
             }
         });
@@ -158,5 +148,29 @@ public class MainActivity extends AppCompatActivity {
     @Override public void onWindowFocusChanged(boolean hasFocus){
         super.onWindowFocusChanged(hasFocus);
         mUnityPlayer.windowFocusChanged(hasFocus);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.app_intro:
+                Intent intro_intent = new Intent(MainActivity.this, AppIntroductionActivity.class);
+                startActivity(intro_intent);
+                return true;
+            case R.id.about:
+                Intent about_intent = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(about_intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

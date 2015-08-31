@@ -2,18 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\libs\QCARUnityPlayer.jar"
+        jar="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="fc82380e787fc40cc13f3a471bc0d30cc568d812">
-        <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\QCARUnityPlayer-edd6792b9f9a4fdd0672cea91d1ecd8245707454.jar" />
-    </item>
-    <item
-        jar="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\exploded-aar\com.github.paolorotolo\appintro\3.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="88a6346382185deaeb9e3cc7d89717bc67d2fb16">
-        <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\classes-c846888fa96c635240407ac8c1c9da059e573c9d.jar" />
+        sha1="e1fa5e1123997a55e3ed65b44892993ff4b58cfe">
+        <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\classes-a7138102b8d0c4736fcef7d4964e14d54be4d882.jar" />
     </item>
     <item
         jar="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
@@ -23,11 +16,18 @@
         <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-971ce922548932fdaac4dbf0646a5bfc5a0a1588.jar" />
     </item>
     <item
-        jar="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\libs\Vuforia.jar"
+        jar="C:\Users\steakpizza\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="c0b912ee883b3f96c6170cafb3fe58c682d95629">
-        <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\Vuforia-395ca4b09da47e3a825422167a239328c37c87c6.jar" />
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-ca06d234cddf9e0bbb9b5ba7d614b4f172de0948.jar" />
+    </item>
+    <item
+        jar="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\libs\QCARUnityPlayer.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fc82380e787fc40cc13f3a471bc0d30cc568d812">
+        <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\QCARUnityPlayer-edd6792b9f9a4fdd0672cea91d1ecd8245707454.jar" />
     </item>
     <item
         jar="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
@@ -51,6 +51,13 @@
         <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\VuforiaMedia-32ce43ee543a8890ef28ea26cc168b3a15099a99.jar" />
     </item>
     <item
+        jar="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
+        <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\classes-7bae3ffe46ab7b3b13d9dfbdbcbaee1ec9332f42.jar" />
+    </item>
+    <item
         jar="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\libs\unity-classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -58,11 +65,18 @@
         <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\unity-classes-db4bfdf1b832ba049f0c8f449d99f3108b3488c3.jar" />
     </item>
     <item
-        jar="C:\Users\steakpizza\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jar="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\libs\Vuforia.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-ca06d234cddf9e0bbb9b5ba7d614b4f172de0948.jar" />
+        sha1="c0b912ee883b3f96c6170cafb3fe58c682d95629">
+        <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\Vuforia-395ca4b09da47e3a825422167a239328c37c87c6.jar" />
+    </item>
+    <item
+        jar="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\exploded-aar\com.github.paolorotolo\appintro\3.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="88a6346382185deaeb9e3cc7d89717bc67d2fb16">
+        <dex dex="C:\Users\steakpizza\Desktop\DevWorkspace\AResume\AResume\QCARJava\app\build\intermediates\pre-dexed\debug\classes-c846888fa96c635240407ac8c1c9da059e573c9d.jar" />
     </item>
 
 </items>

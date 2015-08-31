@@ -10,7 +10,7 @@ import com.github.paolorotolo.appintro.AppIntro;
 /**
  * Created by steakpizza on 8/26/2015.
  */
-public class AppIntroduction extends AppIntro {
+public class AppIntroductionActivity extends AppIntro {
     @Override
     public void init(Bundle savedInstanceState) {
         addSlide(SampleSlide.newInstance(R.layout.tutorial0));
