@@ -22,7 +22,7 @@ public class AppIntroductionActivity extends AppIntro {
         addSlide(SampleSlide.newInstance(R.layout.tutorial6));
         addSlide(SampleSlide.newInstance(R.layout.tutorial7));
         addSlide(SampleSlide.newInstance(R.layout.tutorial8));
-        setFadeAnimation();
+        setDepthAnimation();
     }
 
     private void loadMainActivity(){

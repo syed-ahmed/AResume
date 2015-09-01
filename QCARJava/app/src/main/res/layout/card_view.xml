@@ -29,6 +29,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/project_name"
+            android:fontFamily="sans-serif-thin"
             android:layout_alignParentTop="false"
             android:textSize="20sp"
             android:layout_alignParentEnd="false"

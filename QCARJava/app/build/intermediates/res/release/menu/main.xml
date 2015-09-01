@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.thesyedahmed.aresume.MainActivity" >
+
+    <item
+        android:id="@+id/app_intro"
+        android:title="@string/app_intro"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
+        app:showAsAction="never"/>
+
+</menu>
+<!-- From: file:/C:/Users/steakpizza/Desktop/DevWorkspace/AResume/AResume/QCARJava/app/src/main/res/menu/main.xml -->

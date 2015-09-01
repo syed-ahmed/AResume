@@ -5,8 +5,10 @@ android {
     buildToolsVersion '21.1.2'
     defaultConfig {
         applicationId "com.thesyedahmed.aresume"
-        minSdkVersion 19
+        minSdkVersion 16
         targetSdkVersion 21
+        versionCode 1
+        versionName '0.0'
     }
     buildTypes {
         release {
