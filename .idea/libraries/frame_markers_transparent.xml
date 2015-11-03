@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="frame-markers-transparent">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AResumeUnity/Assets/Vuforia/Editor/FrameMarkerTextures/frame-markers-transparent.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

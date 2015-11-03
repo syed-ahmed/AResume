@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="release">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/QCARJava/app/build/intermediates/pre-dexed/release/classes-c846888fa96c635240407ac8c1c9da059e573c9d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/QCARJava/app/build/intermediates/pre-dexed/release/unity-classes-db4bfdf1b832ba049f0c8f449d99f3108b3488c3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/QCARJava/app/build/intermediates/pre-dexed/release/Vuforia-395ca4b09da47e3a825422167a239328c37c87c6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/QCARJava/app/build/intermediates/pre-dexed/release/classes-7f67451587637ed3369d7a40af2ee53e1cfc5462.jar!/" />
+      <root url="jar://$PROJECT_DIR$/QCARJava/app/build/intermediates/pre-dexed/release/support-annotations-22.2.1-ca06d234cddf9e0bbb9b5ba7d614b4f172de0948.jar!/" />
+      <root url="jar://$PROJECT_DIR$/QCARJava/app/build/intermediates/pre-dexed/release/VuforiaMedia-32ce43ee543a8890ef28ea26cc168b3a15099a99.jar!/" />
+      <root url="jar://$PROJECT_DIR$/QCARJava/app/build/intermediates/pre-dexed/release/classes-7bae3ffe46ab7b3b13d9dfbdbcbaee1ec9332f42.jar!/" />
+      <root url="jar://$PROJECT_DIR$/QCARJava/app/build/intermediates/pre-dexed/release/internal_impl-22.2.1-971ce922548932fdaac4dbf0646a5bfc5a0a1588.jar!/" />
+      <root url="jar://$PROJECT_DIR$/QCARJava/app/build/intermediates/pre-dexed/release/classes-b0b31a37418883208b88346528626a6f2ed8bf0d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/QCARJava/app/build/intermediates/pre-dexed/release/classes-a7138102b8d0c4736fcef7d4964e14d54be4d882.jar!/" />
+      <root url="jar://$PROJECT_DIR$/QCARJava/app/build/intermediates/pre-dexed/release/QCARUnityPlayer-edd6792b9f9a4fdd0672cea91d1ecd8245707454.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

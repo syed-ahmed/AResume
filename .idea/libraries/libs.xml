@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AResume/app/libs/unity-classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AResume/app/libs/VuforiaMedia.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AResume/app/libs/Vuforia.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AResume/app/libs/QCARUnityPlayer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

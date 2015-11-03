@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Android">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AResumeUnity/Assets/Plugins/Android/Vuforia.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AResumeUnity/Assets/Plugins/Android/QCARUnityPlayer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AResumeUnity/Assets/Plugins/Android/VuforiaMedia.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

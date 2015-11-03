@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/QCARJava/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/22.2.1.iml" filepath="$PROJECT_DIR$/QCARJava/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/22.2.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QCARJava/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.1/22.2.1.iml" filepath="$PROJECT_DIR$/QCARJava/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.1/22.2.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QCARJava/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/22.2.1.iml" filepath="$PROJECT_DIR$/QCARJava/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/22.2.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QCARJava/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/22.2.1.iml" filepath="$PROJECT_DIR$/QCARJava/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/22.2.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QCARJava/app/build/intermediates/exploded-aar/com.github.paolorotolo/appintro/3.2.0/3.2.0.iml" filepath="$PROJECT_DIR$/QCARJava/app/build/intermediates/exploded-aar/com.github.paolorotolo/appintro/3.2.0/3.2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AResumeUnity/Assets/Plugins/Android/Android.iml" filepath="$PROJECT_DIR$/AResumeUnity/Assets/Plugins/Android/Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AResumeUnity/Assets/Plugins/Android/VuforiaMediaSource/VuforiaMediaSource.iml" filepath="$PROJECT_DIR$/AResumeUnity/Assets/Plugins/Android/VuforiaMediaSource/VuforiaMediaSource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QCARJava/app/build/generated/source/buildConfig/androidTest/androidTest.iml" filepath="$PROJECT_DIR$/QCARJava/app/build/generated/source/buildConfig/androidTest/androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AResume/app/build/generated/source/buildConfig/androidTest/androidTest1.iml" filepath="$PROJECT_DIR$/AResume/app/build/generated/source/buildConfig/androidTest/androidTest1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AResume/app/build/generated/source/buildConfig/buildConfig.iml" filepath="$PROJECT_DIR$/AResume/app/build/generated/source/buildConfig/buildConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QCARJava/app/build/generated/source/buildConfig/buildConfig1.iml" filepath="$PROJECT_DIR$/QCARJava/app/build/generated/source/buildConfig/buildConfig1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AResume/app/build/intermediates/manifests/androidTest/debug/debug.iml" filepath="$PROJECT_DIR$/AResume/app/build/intermediates/manifests/androidTest/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AResume/app/build/intermediates/manifests/full/debug/debug.iml" filepath="$PROJECT_DIR$/AResume/app/build/intermediates/manifests/full/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QCARJava/app/build/intermediates/manifests/androidTest/debug/debug.iml" filepath="$PROJECT_DIR$/QCARJava/app/build/intermediates/manifests/androidTest/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QCARJava/app/build/intermediates/manifests/full/debug/debug.iml" filepath="$PROJECT_DIR$/QCARJava/app/build/intermediates/manifests/full/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AResume/app/src/main/main.iml" filepath="$PROJECT_DIR$/AResume/app/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QCARJava/app/src/main/main1.iml" filepath="$PROJECT_DIR$/QCARJava/app/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QCARJava/app/build/generated/source/r/r.iml" filepath="$PROJECT_DIR$/QCARJava/app/build/generated/source/r/r.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AResume/app/build/generated/source/r/r1.iml" filepath="$PROJECT_DIR$/AResume/app/build/generated/source/r/r1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QCARJava/app/build/intermediates/manifests/full/release/release.iml" filepath="$PROJECT_DIR$/QCARJava/app/build/intermediates/manifests/full/release/release.iml" />
+    </modules>
+  </component>
+</project>
